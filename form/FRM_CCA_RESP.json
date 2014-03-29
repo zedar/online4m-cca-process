@@ -1,0 +1,66 @@
+{
+  "@class": "pl.bpm4cloud.gui.definition.GuiDefWrapper",
+  "FRM_CCA_RESP": {
+    "controlType": "form",
+    "@class": "pl.bpm4cloud.gui.component.def.FormDef",
+    "id": "GDForm_191",
+    "codeName": "FRM_CCA_RESP",
+    "cssClass": "form-horizontal",
+    "modelCodeName": "GDForm_191",
+    "modelStrategy": "init",
+    "prevModelCodeName": "GDForm_191",
+    "children": {
+      "GDTBGrid_199": {
+        "controlType": "tbgrid",
+        "@class": "pl.bpm4cloud.gui.component.def.GridDef",
+        "id": "GDTBGrid_199",
+        "codeName": "GDTBGrid_199",
+        "cssClass": "tbg-container",
+        "modelCodeName": "GDTBGrid_199",
+        "modelStrategy": "init",
+        "prevModelCodeName": "GDTBGrid_199",
+        "children": {
+          "GDTBGridRow_205": {
+            "controlType": "tbgridrow",
+            "@class": "pl.bpm4cloud.gui.component.def.RowDef",
+            "id": "GDTBGridRow_205",
+            "codeName": "GDTBGridRow_205",
+            "cssClass": "row",
+            "modelCodeName": "GDTBGridRow_205",
+            "modelStrategy": "init",
+            "prevModelCodeName": "GDTBGridRow_205",
+            "children": {
+              "GDTBGridCol_218": {
+                "controlType": "tbgridcol",
+                "@class": "pl.bpm4cloud.gui.component.def.ColumnDef",
+                "id": "GDTBGridCol_218",
+                "codeName": "GDTBGridCol_218",
+                "cssClass": "span12",
+                "modelCodeName": "GDTBGridCol_218",
+                "modelStrategy": "init",
+                "prevModelCodeName": "GDTBGridCol_218",
+                "children": {
+                  "GDTBTypographyBox_224": {
+                    "controlType": "tbtypographybox",
+                    "@class": "pl.bpm4cloud.gui.component.def.HeadingDef",
+                    "id": "GDTBTypographyBox_224",
+                    "codeName": "GDTBTypographyBox_224",
+                    "cssClass": "",
+                    "paragraphCssClass": "",
+                    "heading": true,
+                    "strength": "1",
+                    "paragraph": "",
+                    "text": "Thank You!",
+                    "modelCodeName": "GDTBTypographyBox_224",
+                    "modelStrategy": "init",
+                    "prevModelCodeName": "GDTBTypographyBox_224"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

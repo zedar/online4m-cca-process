@@ -1,0 +1,237 @@
+{
+  "@class": "pl.bpm4cloud.gui.definition.GuiDefWrapper",
+  "FRM_CCA": {
+    "controlType": "form",
+    "@class": "pl.bpm4cloud.gui.component.def.FormDef",
+    "id": "GDForm_24",
+    "codeName": "FRM_CCA",
+    "cssClass": "form-horizontal",
+    "modelCodeName": "GDForm_24",
+    "modelStrategy": "init",
+    "prevModelCodeName": "GDForm_24",
+    "children": {
+      "GDTBGrid_32": {
+        "controlType": "tbgrid",
+        "@class": "pl.bpm4cloud.gui.component.def.GridDef",
+        "id": "GDTBGrid_32",
+        "codeName": "GDTBGrid_32",
+        "cssClass": "tbg-container",
+        "modelCodeName": "GDTBGrid_32",
+        "modelStrategy": "init",
+        "prevModelCodeName": "GDTBGrid_32",
+        "children": {
+          "GDTBGridRow_38": {
+            "controlType": "tbgridrow",
+            "@class": "pl.bpm4cloud.gui.component.def.RowDef",
+            "id": "GDTBGridRow_38",
+            "codeName": "GDTBGridRow_38",
+            "cssClass": "row",
+            "modelCodeName": "GDTBGridRow_38",
+            "modelStrategy": "init",
+            "prevModelCodeName": "GDTBGridRow_38",
+            "children": {
+              "GDTBGridCol_52": {
+                "controlType": "tbgridcol",
+                "@class": "pl.bpm4cloud.gui.component.def.ColumnDef",
+                "id": "GDTBGridCol_52",
+                "codeName": "GDTBGridCol_52",
+                "cssClass": "span12",
+                "modelCodeName": "GDTBGridCol_52",
+                "modelStrategy": "init",
+                "prevModelCodeName": "GDTBGridCol_52",
+                "children": {
+                  "TITLE": {
+                    "controlType": "tbtypographybox",
+                    "@class": "pl.bpm4cloud.gui.component.def.HeadingDef",
+                    "id": "GDTBTypographyBox_71",
+                    "codeName": "TITLE",
+                    "cssClass": "",
+                    "paragraphCssClass": "",
+                    "heading": true,
+                    "strength": "1",
+                    "paragraph": "",
+                    "text": "Credit Card Application",
+                    "modelCodeName": "GDTBTypographyBox_71",
+                    "modelStrategy": "init",
+                    "prevModelCodeName": "GDTBTypographyBox_71"
+                  },
+                  "SUBTITLE": {
+                    "controlType": "tbtypographybox",
+                    "@class": "pl.bpm4cloud.gui.component.def.ParagraphDef",
+                    "id": "GDTBTypographyBox_82",
+                    "codeName": "SUBTITLE",
+                    "cssClass": "",
+                    "paragraphCssClass": "lead",
+                    "heading": "",
+                    "strength": "1",
+                    "paragraph": true,
+                    "text": "Fill out the form. Our consultant will contact You soon.",
+                    "modelCodeName": "GDTBTypographyBox_82",
+                    "modelStrategy": "init",
+                    "prevModelCodeName": "GDTBTypographyBox_82"
+                  }
+                }
+              }
+            }
+          },
+          "GDTBGridRow_44": {
+            "controlType": "tbgridrow",
+            "@class": "pl.bpm4cloud.gui.component.def.RowDef",
+            "id": "GDTBGridRow_44",
+            "codeName": "GDTBGridRow_44",
+            "cssClass": "row",
+            "modelCodeName": "GDTBGridRow_44",
+            "modelStrategy": "init",
+            "prevModelCodeName": "GDTBGridRow_44",
+            "children": {
+              "GDTBGridCol_59": {
+                "controlType": "tbgridcol",
+                "@class": "pl.bpm4cloud.gui.component.def.ColumnDef",
+                "id": "GDTBGridCol_59",
+                "codeName": "GDTBGridCol_59",
+                "cssClass": "span12",
+                "modelCodeName": "GDTBGridCol_59",
+                "modelStrategy": "init",
+                "prevModelCodeName": "GDTBGridCol_59",
+                "children": {
+                  "NAME": {
+                    "controlType": "tbeditbox",
+                    "@class": "pl.bpm4cloud.gui.component.def.TextInputDef",
+                    "id": "GDTBEditBox_93",
+                    "codeName": "NAME",
+                    "enabled": true,
+                    "taskListColumn": "",
+                    "controlGroupCssClass": "control-group",
+                    "cssClass": "span3",
+                    "label": "Name:",
+                    "pattern": "",
+                    "tooltip": "",
+                    "modelCodeName": "NAME",
+                    "modelStrategy": "init",
+                    "prevModelCodeName": "NAME"
+                  },
+                  "EMAIL": {
+                    "controlType": "tbeditbox",
+                    "@class": "pl.bpm4cloud.gui.component.def.TextInputDef",
+                    "id": "GDTBEditBox_105",
+                    "codeName": "EMAIL",
+                    "enabled": true,
+                    "taskListColumn": "",
+                    "controlGroupCssClass": "control-group",
+                    "cssClass": "span4",
+                    "label": "Email:",
+                    "pattern": "",
+                    "tooltip": "",
+                    "modelCodeName": "EMAIL",
+                    "modelStrategy": "init",
+                    "prevModelCodeName": "EMAIL"
+                  },
+                  "MOBILE": {
+                    "controlType": "tbeditbox",
+                    "@class": "pl.bpm4cloud.gui.component.def.TextInputDef",
+                    "id": "GDTBEditBox_117",
+                    "codeName": "MOBILE",
+                    "enabled": true,
+                    "taskListColumn": "",
+                    "controlGroupCssClass": "control-group",
+                    "cssClass": "span2",
+                    "label": "Mobile phone:",
+                    "pattern": "(999) 999 999 999",
+                    "tooltip": "",
+                    "modelCodeName": "MOBILE",
+                    "modelStrategy": "init",
+                    "prevModelCodeName": "MOBILE"
+                  },
+                  "CARD_TYPE": {
+                    "controlType": "tbradiobox",
+                    "@class": "pl.bpm4cloud.gui.component.def.RadioBoxGroupDef",
+                    "id": "GDTBRadioBox_129",
+                    "codeName": "CARD_TYPE",
+                    "enabled": true,
+                    "controlGroupCssClass": "control-group",
+                    "cssClass": "inline",
+                    "label": "Credit card type",
+                    "groupName": "",
+                    "tooltip": "",
+                    "dictionary": {
+                      "V": "Visa payWave",
+                      "M": "MasterCard payPass"
+                    },
+                    "modelCodeName": "CARD_TYPE",
+                    "modelStrategy": "init",
+                    "prevModelCodeName": "CARD_TYPE"
+                  },
+                  "DISCLOSURE": {
+                    "controlType": "tbcheckbox",
+                    "@class": "pl.bpm4cloud.gui.component.def.CheckBoxGroupDef",
+                    "id": "GDTBCheckBox_144",
+                    "codeName": "DISCLOSURE",
+                    "enabled": true,
+                    "controlGroupCssClass": "control-group",
+                    "cssClass": "",
+                    "label": "Checkbox group label",
+                    "groupName": "",
+                    "tooltip": "",
+                    "dictionary": {
+                      "D": "The disclosure of personal data is voluntary"
+                    },
+                    "modelCodeName": "DISCLOSURE",
+                    "modelStrategy": "init",
+                    "prevModelCodeName": "DISCLOSURE",
+                    "children": {}
+                  },
+                  "STATUS": {
+                    "controlType": "tbselectbox",
+                    "@class": "pl.bpm4cloud.gui.component.def.SelectDef",
+                    "id": "GDTBSelectBox_159",
+                    "codeName": "STATUS",
+                    "enabled": true,
+                    "taskListColumn": "",
+                    "controlGroupCssClass": "control-group",
+                    "cssClass": "span2",
+                    "label": "Status",
+                    "tooltip": "",
+                    "dictionary": {
+                      "L": "LEAD",
+                      "C": "CONFIRMED",
+                      "R": "REJECTED"
+                    },
+                    "modelCodeName": "STATUS",
+                    "modelStrategy": "init",
+                    "prevModelCodeName": "STATUS"
+                  },
+                  "GDTBButtonGroup_171": {
+                    "controlType": "tbbuttongroup",
+                    "@class": "pl.bpm4cloud.gui.component.def.ButtonGroupDef",
+                    "id": "GDTBButtonGroup_171",
+                    "codeName": "GDTBButtonGroup_171",
+                    "cssClass": "form-actions",
+                    "modelCodeName": "GDTBButtonGroup_171",
+                    "modelStrategy": "init",
+                    "prevModelCodeName": "GDTBButtonGroup_171",
+                    "children": {
+                      "SUBMIT": {
+                        "controlType": "tbbutton",
+                        "@class": "pl.bpm4cloud.gui.component.def.ButtonDef",
+                        "id": "GDTBButton_177",
+                        "codeName": "SUBMIT",
+                        "cssClass": "btn-large btn-danger",
+                        "iconClass": "icon-ok icon-white",
+                        "label": "Submit",
+                        "tooltip": "",
+                        "toStateTransition": "",
+                        "modelCodeName": "GDTBButton_177",
+                        "modelStrategy": "init",
+                        "prevModelCodeName": "GDTBButton_177"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

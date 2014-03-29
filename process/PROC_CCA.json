@@ -1,0 +1,92 @@
+{
+  "@class": "pl.bpm4cloud.process.domain.ProcessDef",
+  "codeName": "SDContentPane_32",
+  "version": "1.0",
+  "modelCreationStrategy": "INIT",
+  "startNode": "REGISTER",
+  "startRoles": "ROLE_ANONYMOUS, ROLE_USER",
+  "bb": {
+    "@class": "pl.bpm4cloud.process.domain.CoordinatesDef",
+    "x": 100,
+    "y": 100
+  },
+  "swimlanes": [
+    {
+      "@class": "pl.bpm4cloud.process.domain.SwimlaneDef",
+      "name": "CC",
+      "roles": "ROLE_USER, ROLE_BO, ROLE_FIRM_ADMIN"
+    },
+    {
+      "@class": "pl.bpm4cloud.process.domain.SwimlaneDef",
+      "name": "user",
+      "roles": "ROLE_USER, ROLE_ANONYMOUS, ROLE_FIRM_ADMIN"
+    }
+  ],
+  "nodes": [
+    {
+      "@class": "pl.bpm4cloud.process.domain.AutomaticNodeDef",
+      "name": "REGISTER",
+      "swimlane": "user",
+      "label": "REGISTER",
+      "actionHandlerClass": "RegisterHandler",
+      "bb": {
+        "@class": "pl.bpm4cloud.process.domain.CoordinatesDef",
+        "x": 223,
+        "y": 132
+      },
+      "transitions": [
+        {
+          "@class": "pl.bpm4cloud.process.domain.TransitionDef",
+          "name": "toCALL_CENTER",
+          "to": "CALL_CENTER"
+        }
+      ]
+    },
+    {
+      "@class": "pl.bpm4cloud.process.domain.TaskNodeDef",
+      "name": "CALL_CENTER",
+      "defaultForm": "FRM_CCA",
+      "swimlane": "CC",
+      "label": "CALL_CENTER",
+      "bb": {
+        "@class": "pl.bpm4cloud.process.domain.CoordinatesDef",
+        "x": 394,
+        "y": 133
+      },
+      "transitions": [
+        {
+          "@class": "pl.bpm4cloud.process.domain.TransitionDef",
+          "name": "toEND_REJECTED",
+          "to": "END_REJECTED"
+        },
+        {
+          "@class": "pl.bpm4cloud.process.domain.TransitionDef",
+          "name": "toEND_CONFIRMED",
+          "to": "END_CONFIRMED"
+        }
+      ]
+    },
+    {
+      "@class": "pl.bpm4cloud.process.domain.EndNodeDef",
+      "name": "END_REJECTED",
+      "defaultForm": "FRM_CCA",
+      "swimlane": "user",
+      "bb": {
+        "@class": "pl.bpm4cloud.process.domain.CoordinatesDef",
+        "x": 517.9850810769685,
+        "y": 223.46875
+      }
+    },
+    {
+      "@class": "pl.bpm4cloud.process.domain.EndNodeDef",
+      "name": "END_CONFIRMED",
+      "defaultForm": "FRM_CCA",
+      "swimlane": "user",
+      "bb": {
+        "@class": "pl.bpm4cloud.process.domain.CoordinatesDef",
+        "x": 349.98508107696864,
+        "y": 230.46875
+      }
+    }
+  ]
+}
